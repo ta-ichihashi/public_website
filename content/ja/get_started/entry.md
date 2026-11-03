@@ -5,6 +5,11 @@ icon: fas door-open
 modules: ["mermaid"]
 ---
 
+# エントリー手順書
+このページのエントリー手順をPDFで簡潔にまとめています。まずはこちらをご覧ください。
+{{< fas file-pdf fa-2xl >}}
+{{< pdf-modal file="/entry_manual_1026.pdf" title="Open" id="entry_manual" >}}
+
 # 実施要項
 
 要項1 の第三版が2026年7月25日に公開（8月16日更新）されました。{{< link "/competitions/bulletins">}} こちらのページ {{< /link >}} をご覧ください。エントリーの手順は、[Bulletin 1 rev.3](/bulletins/Bulletin1_3_ja.pdf)の "大会参加" 章をご覧ください。
