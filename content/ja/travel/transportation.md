@@ -29,7 +29,7 @@ content_blocks:
 
 詳細は下記の「WMG2027 JR関西ワイドエリアパス」ご案内ページをご覧ください。
 
-{{< button icon="fas train" cue=false order="last" href="/travel/jr_transport_pass" >}}
+{{< button icon="fas train" cue=false order="last" href="/ja/travel/jr_transport_pass" >}}
     WMG2027 JR関西ワイドエリアパスのご案内
 {{< /button >}}
 
@@ -37,7 +37,7 @@ content_blocks:
 
 競技会場近くの宿泊施設を予約できない方のために、会場からほど近い主要都市から会場まで運行する広域シャトルバスサービスに関する情報を提供いたします。
 
-{{< button icon="fas bus" cue=false order="last" href="/travel/wide_area_shuttle_bus" >}}
+{{< button icon="fas bus" cue=false order="last" href="/ja/travel/wide_area_shuttle_bus" >}}
     広域シャトルバスのご案内
 {{< /button >}}
 
@@ -67,7 +67,7 @@ content_blocks:
 さらに、ハチ北宿泊エリア（ハチ北観光協会）とハチ高原（ハチ高原交流促進センター）は、これらのエリアに宿泊する乗客の出発地点として指定されています。イベント開催日には、これらの出発地点とイベント会場の間をバスが運行します。イベント開催日によってバスのルートが異なりますのでご注意ください。運営スケジュール（タイムテーブル）は宿泊施設の場所によって異なるため、登録締め切り後にイベントウェブサイトで発表されます。イベント当日の出発時間に基づいて使用するバスが指定される場合があります。
 
 ---
-公式バスルート（PDF）
+公式バスルート（PDF・英語）
 
 {{< fas file-pdf fa-2xl >}}
 {{< pdf-modal 
