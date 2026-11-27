@@ -1,13 +1,7 @@
 ---
-title: ORIENTEERING IN JAPAN
-content_blocks:
-  - _bookshop_name: hero
-    heading:
-      title: ORIENTEERING IN JAPAN
-      align: start
-      content: World Masters Orienteering Competitions 2027
-      width: 8
-    background:
-      backdrop: /image/2022_jwoc_relay1_susana_luzir.jpg
-    breadcrumb: true
+title: "ORIENTEERING IN JAPAN"
+description: "WMOC参加者にも参加を呼び掛けている日本国内で開催される関連オリエンテーリング大会の一覧です。"
+layout: single
 ---
+
+{{<event-list>}}

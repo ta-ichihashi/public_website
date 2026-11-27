@@ -1,0 +1,128 @@
+{{ $schedules := .Page.Params.schedules }}
+{{ $webUrl := .Page.Params.website }}
+{{ $webLabel := .Page.Params.website_label }}
+{{ $docUrl := .Page.Params.document }}
+{{ $docLabel := .Page.Params.document_label }}
+{{ $contact := .Page.Params.contact }}
+{{ $contactLabel := .Page.Params.contact_label }}
+{{ $isJa := eq .Page.Language.Lang "ja" }}
+
+{{/* 多言語のデフォルトラベル設定 */}}
+{{ $defaultWebLabel := cond $isJa "イベント公式サイト" "Official Website" }}
+{{ $defaultDocLabel := cond $isJa "詳細資料（要項・PDF）" "Detailed Document" }}
+{{ $defaultContactLabel := cond $isJa "お問い合わせ" "Contact" }}
+{{ $defaultPlace := cond $isJa "場所未定" "Location TBD" }}
+
+<div class="my-4">
+  {{/* ▼ 1. イベント公式サイト・詳細資料・問い合わせリンク */}}
+  {{ if or $webUrl $docUrl $contact }}
+    <div class="alert alert-light border d-flex flex-wrap align-items-center justify-content-between gap-3 mb-4 shadow-sm">
+      <div class="d-flex align-items-center text-body-secondary small fw-bold">
+        {{ partial "assets/icon.html" (dict "icon" "fas circle-info" "spacing" false "class" "text-primary fs-5 me-2") }}
+        <span>{{ cond $isJa "関連リンク・お問い合わせ" "Event Links & Contact" }}</span>
+      </div>
+
+      <div class="d-flex flex-wrap align-items-center gap-2 ms-auto">
+        {{/* イベント公式サイトボタン */}}
+        {{ with $webUrl }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm d-inline-flex align-items-center">
+            {{ partial "assets/icon.html" (dict "icon" "fas globe" "spacing" false "class" "me-1") }}
+            <span>{{ $webLabel | default $defaultWebLabel }}</span>
+            {{ partial "assets/icon.html" (dict "icon" "fas arrow-up-right-from-square" "spacing" false "class" "ms-1") }}
+          </a>
+        {{ end }}
+
+        {{/* 詳細資料ボタン */}}
+        {{ with $docUrl }}
+          <a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-sm d-inline-flex align-items-center">
+            {{ partial "assets/icon.html" (dict "icon" "fas file-pdf" "spacing" false "class" "me-1") }}
+            <span>{{ $docLabel | default $defaultDocLabel }}</span>
+            {{ partial "assets/icon.html" (dict "icon" "fas arrow-up-right-from-square" "spacing" false "class" "ms-1") }}
+          </a>
+        {{ end }}
+
+        {{/* お問い合わせボタン（メール・URL両対応） */}}
+        {{ with $contact }}
+          {{ $isEmail := and (in . "@") (not (hasPrefix . "http")) }}
+          {{ $contactHref := cond $isEmail (printf "mailto:%s" .) . }}
+          <a href="{{ $contactHref }}" {{ if not $isEmail }}target="_blank" rel="noopener noreferrer"{{ end }} class="btn btn-outline-secondary btn-sm d-inline-flex align-items-center">
+            {{ partial "assets/icon.html" (dict "icon" "fas envelope" "spacing" false "class" "me-1") }}
+            <span>{{ $contactLabel | default $defaultContactLabel }}</span>
+            {{ if not $isEmail }}
+              {{ partial "assets/icon.html" (dict "icon" "fas arrow-up-right-from-square" "spacing" false "class" "ms-1") }}
+            {{ end }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{/* ▼ 2. スケジュール一覧 */}}
+  {{ if $schedules }}
+    {{ range $schedules }}
+      {{ $start := time.AsTime .start }}
+      {{ $end := time.AsTime .end }}
+
+      {{ $dateStr := "" }}
+      {{ $timeStr := "" }}
+      {{ if $isJa }}
+        {{ $weekdays := slice "日" "月" "火" "水" "木" "金" "土" }}
+        {{ $wd := index $weekdays (int ($start.Format "0")) }}
+        {{ $dateStr = printf "%s (%s)" ($start.Format "2006年1月2日") $wd }}
+        {{ $timeStr = printf "%s 〜 %s" ($start.Format "15:04") ($end.Format "15:04") }}
+      {{ else }}
+        {{ $dateStr = $start.Format "Mon, Jan 2, 2006" }}
+        {{ $timeStr = printf "%s – %s" ($start.Format "3:04 PM") ($end.Format "3:04 PM") }}
+      {{ end }}
+
+      {{ $placeName := .place | default $defaultPlace }}
+
+      <div class="card mb-3 shadow-sm border-start border-4 border-primary">
+        <div class="card-body">
+          <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+            <span class="badge bg-primary fs-6 d-inline-flex align-items-center">
+              {{ partial "assets/icon.html" (dict "icon" "fas calendar-day" "spacing" false) }}
+              <span class="ms-1">{{ $dateStr }}</span>
+            </span>
+            <span class="badge bg-secondary-subtle text-body border fs-6 d-inline-flex align-items-center">
+              {{ partial "assets/icon.html" (dict "icon" "fas clock" "spacing" false) }}
+              <span class="ms-1">{{ $timeStr }}</span>
+            </span>
+
+            {{/* 場所とGoogleマップリンク */}}
+            <span class="text-body-secondary small ms-md-auto d-inline-flex align-items-center">
+              {{ partial "assets/icon.html" (dict "icon" "fas location-dot" "spacing" false) }}
+              {{ if .map }}
+                <a href="{{ .map }}" target="_blank" rel="noopener noreferrer" class="ms-1 link-secondary text-decoration-underline">
+                  {{ $placeName }}
+                  {{ partial "assets/icon.html" (dict "icon" "fas arrow-up-right-from-square" "spacing" false "class" "ms-1 small") }}
+                </a>
+              {{ else }}
+                <span class="ms-1">{{ $placeName }}</span>
+              {{ end }}
+            </span>
+          </div>
+
+          {{ with .title }}
+            <h5 class="card-title fw-bold mb-1">{{ . }}</h5>
+          {{ end }}
+
+          {{ with .summary }}
+            <p class="card-text mb-0 text-body-secondary">{{ . | markdownify }}</p>
+          {{ end }}
+
+          {{/* 各日程ごとの個別資料リンク */}}
+          {{ with .document }}
+            <div class="mt-2 pt-2 border-top">
+              <a href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer" class="small text-decoration-none d-inline-flex align-items-center">
+                {{ partial "assets/icon.html" (dict "icon" "fas file-lines" "spacing" false) }}
+                <span class="ms-1">{{ $.Page.Params.document_label | default (cond $isJa "詳細資料" "Detailed Document") }}</span>
+                {{ partial "assets/icon.html" (dict "icon" "fas arrow-up-right-from-square" "spacing" false "class" "ms-1") }}
+              </a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>

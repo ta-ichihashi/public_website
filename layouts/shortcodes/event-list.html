@@ -1,0 +1,70 @@
+{{ $pages := .Page.RegularPages.ByDate }}
+{{ $isJa := eq .Page.Language.Lang "ja" }}
+
+<div class="row row-cols-1 row-cols-md-2 g-4 my-3">
+  {{ range $pages }}
+    {{ $schedules := .Params.schedules }}
+    <div class="col">
+      <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
+        {{/* サムネイル画像がある場合 */}}
+        {{ with .Params.thumbnail }}
+          <img src="{{ . | relURL }}" class="card-img-top" alt="{{ $.Title }}" style="height: 180px; object-fit: cover;">
+        {{ end }}
+
+        <div class="card-body d-flex flex-column">
+          {{/* 開催日のバッジ（schedulesの最初の日付を自動取得） */}}
+          {{ if $schedules }}
+            {{ $first := index $schedules 0 }}
+            {{ $start := time.AsTime $first.start }}
+            {{ $dateStr := cond $isJa ($start.Format "2006年1月2日") ($start.Format "Jan 2, 2006") }}
+            <div class="mb-2">
+              <span class="badge bg-primary d-inline-flex align-items-center">
+                {{ partial "assets/icon.html" (dict "icon" "fas calendar-day" "spacing" false) }}
+                <span class="ms-1">{{ $dateStr }}{{ if gt (len $schedules) 1 }} 〜{{ end }}</span>
+              </span>
+              {{ with $first.place }}
+                <span class="badge bg-secondary-subtle text-body border ms-1 d-inline-flex align-items-center">
+                  {{ partial "assets/icon.html" (dict "icon" "fas location-dot" "spacing" false) }}
+                  <span class="ms-1">{{ . }}</span>
+                </span>
+              {{ end }}
+            </div>
+          {{ end }}
+
+          {{/* タイトル（クリックで詳細ページへ） */}}
+          <h5 class="card-title fw-bold">
+            <a href="{{ .RelPermalink }}" class="text-decoration-none stretched-link">
+              {{ .Title }}
+            </a>
+          </h5>
+
+          {{/* 概要文 */}}
+          {{ with .Description }}
+            <p class="card-text text-body-secondary small flex-grow-1">
+              {{ . }}
+            </p>
+          {{ end }}
+
+          {{/* フッター：資料・Webサイト有無のアイコン表示 */}}
+          <div class="mt-3 pt-2 border-top d-flex align-items-center justify-content-between small text-primary">
+            <span class="fw-bold">
+              {{ cond $isJa "詳細・日程を見る" "View Details" }}
+              {{ partial "assets/icon.html" (dict "icon" "fas arrow-right" "spacing" false "class" "ms-1") }}
+            </span>
+            <div class="d-flex gap-2 text-body-secondary">
+              {{ if .Params.website }}
+                <span title="Official Website">{{ partial "assets/icon.html" (dict "icon" "fas globe" "spacing" false) }}</span>
+              {{ end }}
+              {{ if .Params.document }}
+                <span title="Bulletin / PDF">{{ partial "assets/icon.html" (dict "icon" "fas file-pdf" "spacing" false) }}</span>
+              {{ end }}
+              {{ if .Params.contact }}
+                <span title="Contact">{{ partial "assets/icon.html" (dict "icon" "fas envelope" "spacing" false) }}</span>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>

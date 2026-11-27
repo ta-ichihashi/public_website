@@ -42,8 +42,6 @@ description= 'World Masters Orienteering Championships 2027 Japan public website
     overlayMode = "dark"
     horizontal = false
     offset = "5.5rem"
-    search = true
-    searchModal = true
     breadcrumb = true
     toc = true
     sidebar = true
@@ -51,6 +49,9 @@ description= 'World Masters Orienteering Championships 2027 Japan public website
     [navigation.padding]
         x = 4
         y = 4
+    [navigation.search]
+    enabled = true
+    modal = true
 
 [messages]
     placement = "bottom-right"
