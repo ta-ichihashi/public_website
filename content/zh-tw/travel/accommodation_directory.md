@@ -249,37 +249,30 @@ height=100
 |   7 | [Kaminokawa no Hitotoki Camp Resort](https://kaminokawa-hitotoki.com/)                                          | Kamikawa    | rent a whole house         | bathroom                                        | bread                | BBQ(option)             | Western                                    | JR Teramae, 10km                                            | Address : [1019-13 Neuno, Kamikawa-cho, Kanzaki-gun, Hyogo](https://maps.app.goo.gl/Jt8A3u79Xpswio1r5)<br>e-mail : online form on the website<br>Multilingual support : translator app<br>Parking : Yes<br>freeWiFi : No<br>Capacity(rooms/guests): 22 / 176<br>Check-in/out: 3:00 PM - 10:00 AM<br>Contact(Phone / Fax): 0790-35-8600, 0790-35-8601<br>Remarks: advance payment                                                                                                                               |
 {{< /table >}}
 
-## 下載區域圖
+## Download area maps
 
-養父市住宿重點地圖
+Accommodation Focus Map of Yabu
 
-{{< pdf-modal
-file="/Accommodation_Transportation/Accommodation_Focus_Map_of_Yabu.pdf"
-title="養父市區域地圖"
+{{< pdf-modal 
+    file="/Accommodation_Transportation/Accommodation_Focus_Map_of_Yabu.pdf" 
+    title="Yabu city area map"
+    id="Accommodation_Focus_Map_of_Yabu" 
+>}} 
 
-id="Accommodation_Focus_Map_of_Yabu"
->}}
+{{< pdf-modal 
+    file="/Accommodation_Transportation/Accommodation_Focus_Map_of_Kami.pdf" 
+    title="Kami town area map" 
+    id="Accommodation_Focus_Map_of_Kami" 
+>}} 
 
-{{< pdf-modal
-file="/Accommodation_Transportation/Accommodation_Focus_Map_of_Kami.pdf"
-title="香美町區域地圖"
-id="Accommodation_Focus_Map_of_Kami"
->}}
-
----
 
 {{< carousel id="carousel" ratio="16x9" class="d-block col-sm-12 col-lg-6 w-100 mx-auto"
-
->}}
-
-{{< img src="Accommodation_Transportation/Hachi_Kogen_Area_(Yabu).svg" caption="鉢高原地區 (Yabu)" >}}
-
-{{< img src="Accommodation_Transportation/General_View_(Kami).svg" caption="全景 (Kami)" >}}
-
-{{< img src="Accommodation_Transportation/Kasumi_Area_(Kami).svg" caption="霞地區 (Kami)" >}}
-
-{{< img src="Accommodation_Transportation/Shibayama_Area_(Kami).svg" caption="芝山地區 (Kami)" >}}
-
-{{< img src="Accommodation_Transportation/Shibayama_Area_(Kami).svg" caption="芝山地區 (Kami)" >}}tation/Satsu_Area_(Kami).svg" caption="Satsu Area (Kami)" >}}
-{{< img src="Accommodation_Transportation/Hachikita_Area_(Kami).svg" caption="Hachikita Area (Kami)" >}}
+ >}}
+  {{< img src="Accommodation_Transportation/Hachi_Kogen_Area_(Yabu).svg" caption="Hachi Kogen Area (Yabu)" >}}
+  {{< img src="Accommodation_Transportation/General_View_(Kami).svg" caption="General View (Kami)" >}}
+  {{< img src="Accommodation_Transportation/Kasumi_Area_(Kami).svg" caption="Kasumi Area (Kami)" >}}
+  {{< img src="Accommodation_Transportation/Shibayama_Area_(Kami).svg" caption="Shibayama Area (Kami)" >}}
+  {{< img src="Accommodation_Transportation/Satsu_Area_(Kami).svg" caption="Satsu Area (Kami)" >}}
+  {{< img src="Accommodation_Transportation/Hachikita_Area_(Kami).svg" caption="Hachikita Area (Kami)" >}}
 {{< /carousel >}}
+

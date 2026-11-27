@@ -2,9 +2,9 @@
  "compilerOptions": {
   "paths": {
    "*": [
-    "..\\..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\gethinode\\hinode\\v3@v3.24.0\\assets\\*",
+    "..\\..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\gethinode\\hinode\\v3@v3.54.12\\assets\\*",
     "..\\..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\nextapps-de\\flexsearch@v0.0.0-20260529083235-f7ed963096a0\\dist\\*",
-    "..\\..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\twbs\\bootstrap@v5.3.8+incompatible\\dist\\js\\*"
+    "..\\..\\..\\..\\..\\AppData\\Local\\hugo_cache\\modules\\filecache\\modules\\pkg\\mod\\github.com\\twbs\\bootstrap@v5.3.9+incompatible\\dist\\js\\*"
    ]
   }
  }
