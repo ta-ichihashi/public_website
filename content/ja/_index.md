@@ -37,6 +37,11 @@ content_blocks:
 {{< accordion id="accordion-flush" class="accordion-flush" >}}
 {{< accordion-item title="LATEST NEWS" show="true" >}}
 
+{{< badge title="2026-11-26" >}}
+
+* 世界中のWMOC参加者向けに参加可能な国内一般オリエンテーリングイベントの紹介ページ [ORIENTEERING IN JAPAN](/joint_events/orienteering_in_japan/) を開設しました。
+* 最初のご紹介イベントは [沖縄オリエンテーリング大会2027](/joint_events/orienteering_in_japan/event1) です。
+
 {{< badge title="2026-11-14" >}}
 
 * [**WMOC2027エントリー手順オンライン説明会のご案内**](/get_started/entry)...エントリーの手順についてオンラインでの説明会を11/19(木), 12/4(金)の2日程で行います。詳細はリンク先のページをご覧ください

@@ -37,6 +37,10 @@ content_blocks:
 {{< accordion id="accordion-flush" class="accordion-flush" >}}
 {{< accordion-item title="LATEST NEWS" show="true" >}}
 
+{{< badge title="Nov. 27 2026" >}}
+
+* The [ORIENTEERING IN JAPAN](/joint_events/orienteering_in_japan/) webpage introduces orienteering events that are open to WMOC participants.
+* The first event we'd like to introduce is the [Okinawa Orienteering Competition 2027](/joint_events/orienteering_in_japan/event1).
 
 {{< badge title="Nov. 10 2026" >}}
 
