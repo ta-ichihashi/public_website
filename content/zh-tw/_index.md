@@ -37,37 +37,42 @@ content_blocks:
 {{< accordion id="accordion-flush" class="accordion-flush" >}}
 {{< accordion-item title="LATEST NEWS" show="true" >}}
 
-{{< badge title="10 Nov. 2026" >}}
+{{< badge title="2026-11-26" >}}
+
+* 我們為來自世界各地的 WMOC 參賽者開設了介紹頁面 [ORIENTEERING IN JAPAN](/joint_events/orienteering_in_japan/)，提供可參加的日本國內一般定向越野賽事資訊。
+* 首場介紹的賽事為 [沖繩定向越野大賽2027](/joint_events/orienteering_in_japan/event1)。
+
+{{< badge title="2026-11-10" >}}
 
 * [廣域接駁巴士](/travel/wide_area_shuttle_bus)指南（事前預告）
 
 
-{{< badge title="10 Sep. 2026" >}}
+{{< badge title="2026-09-10" >}}
 
 * Added Informations of [住宿和交通](travel)
 
-{{< badge title="28 Aug. 2026" >}}
+{{< badge title="2026-08-28" >}}
 
 * [WMG2027 JR關西廣域週遊券現已發售](travel/jr_transport_pass)
 
-{{< badge title="16 Aug. 2026" >}}
+{{< badge title="2026-08-16" >}}
 
 * 增加 [個初學者的定向越野介紹頁面]({{% ref "/forbeginners" %}})
 
-{{< badge title="12 Aug. 2026" >}}
+{{< badge title="2026-08-12" >}}
 
 * 增加[住宿網站板塊]({{% ref "travel/accommodation#web-site-for-accommodation-information" %}})
 
-{{< badge title="30 July. 2026" >}}
+{{< badge title="2026-07-30" >}}
 
 * 增加[常見問題解答]({{% ref "get_started/faq" %}})
 
-{{< badge title="25 July. 2026" >}}
+{{< badge title="2026-07-25" >}}
 
 * [Bulletin 1 Ver.3]({{% ref "competitions/bulletins" %}})已發布
 * [WMOC2027 報名已開放]({{% ref "get_started/entry" %}})
 
-{{< badge title="23 July. 2026" >}}
+{{< badge title="2026-07-23" >}}
 
 * 我們已開通[官方Facebook](https://www.facebook.com/WMOC2027Japan) 頁面。您可以透過頁面底部的連結訪問它。
 
@@ -75,29 +80,29 @@ content_blocks:
 
 {{< accordion-item title="ARCHIVED NEWS" show="false" >}}
 
-{{< badge title="7 July. 2026" >}}
+{{< badge title="2026-07-07" >}}
 
 * [The program for rehearsal event](joint_events/pre_events/rehearsal-event/bulletins/) has been updated again due to replace figures to English version. 
 
 
-{{< badge title="6 July. 2026" >}}
+{{< badge title="2026-07-06" >}}
 
 * [The program for rehearsal event](joint_events/pre_events/rehearsal-event/bulletins/) has been updated to an English version. 
 
 
-{{< badge title="4 July. 2026" >}}
+{{< badge title="2026-07-04" >}}
 
 * Add [programs](joint_events/pre_events/rehearsal-event/bulletins/) and [start list](joint_events/pre_events/rehearsal-event/startlists/) for rehearsal race event.
 
-{{< badge title="16 June. 2026" >}}
+{{< badge title="2026-06-16" >}}
 
 * [Rehearsal event announsment](joint_events/pre_events/rehearsal-event)
 * Updated [Old map](bulletins/WMOC2027_oldmap.pdf)
 
-{{< badge title="26 Feb 2026">}}
+{{< badge title="2026-02-26">}}
 * [WMOC 2027 Entry is delayed until this summer](get_started/entry)
 * [Bulletin 1.2 released](competitions/bulletins)
-{{< badge title="12 Dec 2025">}}
+{{< badge title="2025-12-12">}}
 * wmoc2027 website is established.
 
 {{< /accordion-item >}}
