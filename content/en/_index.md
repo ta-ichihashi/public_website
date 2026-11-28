@@ -39,6 +39,7 @@ content_blocks:
 
 {{< badge title="Nov. 28 2026" >}}
 
+* Registration information for the [Wide-Area Shuttle Bus](travel/wide_area_shuttle_bus.md) has been posted. Registration is now open via IOF Eventor.
 * Update info [distance from each access point to the race start](travel/transportation#distance-from-each-access-point-to-the-race-start)
 * Posted event at the [Pre event at Mt.Fuji Chldrens World](/joint_events/orienteering_in_japan/event2) on Orienteering in Japan.
 

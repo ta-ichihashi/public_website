@@ -1,5 +1,5 @@
 ---
-title: WIDE AREA SHUTTLE BUS (Notice)
+title: WIDE AREA SHUTTLE BUS
 weight: 14
 description: For those who are unable to book accommodation near the competition venue, we will provide information about the wide-area shuttle bus service from major cities located a moderate distance away to the venue.
 icon: fas bus
@@ -7,7 +7,7 @@ fluid: true
 content_blocks:
   - _bookshop_name: hero
     heading:
-      title: WIDE AREA SHUTTLE BUS (Notice)
+      title: WIDE AREA SHUTTLE BUS
       align: start
       content: This is information about shuttle buses connecting cities at medium distances to the venue.
       width: 8
@@ -19,9 +19,6 @@ content_blocks:
 During the Games, a wide-area shuttle bus service will operate between major locations (Kinosaki Onsen/Kumihama, Tottori Station, Himeji Station) and the competition venues.
 
 This service is by advance registration only, with a capacity of 90 passengers per route (first-come, first-served).
-
-We are currently preparing to open registration on IOF Eventor. Please wait a little longer until registration opens.
-
 
 ## Operating Schedule and Plan Overview
 
@@ -38,7 +35,7 @@ We are currently preparing to open registration on IOF Eventor. Please wait a li
 ## Fare per person
 
 
-| Departure / Route | Plan Details | Early Bird Rate (Until Dec 31, 2026) | Regular Rate (From Jan 1, 2027) |
+| Departure / Route | Plan Details | Early Bird Rate (Until Dec 31, 2026) | Regular Rate (From Jan 1 2027 To Feb 28 2027) |
 | :--- | :--- | :---: | :---: |
 | **Kinosaki Onsen / Kumihama** | Standard Plan (All 7 days) | 42,000 JPY | 48,000 JPY |
 | **Kinosaki Onsen / Kumihama** | Himeji Transfer Plan (Return on May 26 & Depart/Arrive Himeji on May 28) | 45,000 JPY | 51,000 JPY |
@@ -49,11 +46,13 @@ We are currently preparing to open registration on IOF Eventor. Please wait a li
 
 ## Registration
 
-* **How to Apply:** Registration will be accepted via IOF Eventor (registration will open as soon as preparations are complete).
+* **How to Apply:** Please submit your entry via IOF Eventor. (See the image below)
 * **Early Bird Deadline:** Thursday, December 31, 2026, at 23:59 (JST)
 * **Final Registration Deadline:** Sunday, February 28, 2027, at 23:59 (JST)
   * *Note: Registration will close before the deadline once the capacity (90 passengers per route) is reached.*
 * **Timetable:** Detailed operating schedules for each route will be announced on the official event website after the registration deadline. Buses will operate on a schedule that arrives in time for the first start (top start).
+
+![](image/wide_area_bus_register.png)
 
 ## Cancellation Policy & Refunds
 

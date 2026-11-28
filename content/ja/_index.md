@@ -39,6 +39,7 @@ content_blocks:
 
 {{< badge title="2026年11月28日" >}}
 
+* [広域シャトルバス](travel/wide_area_shuttle_bus.md) の受付案内を掲載しました。IOF Eventorから受付中です。
 * [各交通拠点から競技スタートまでの距離](travel/transportation#distance-from-each-point-to-the-race-start)の情報を更新しました。
 * 「Orienteering in Japan」に[富士山こどもの国 プレ大会](/joint_events/orienteering_in_japan/event2)のイベント情報を掲載しました。
 

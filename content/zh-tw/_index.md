@@ -39,6 +39,7 @@ content_blocks:
 
 {{< badge title="2026-11-28" >}}
 
+* 已發布[廣域接駁巴士](travel/wide_area_shuttle_bus.md)的報名資訊，目前正透過 IOF Eventor 開放報名中。
 * 更新了[從各交通據點至比賽起點的距離](travel/transportation#distance-from-each-access-point-to-the-race-start)資訊。
 * 於「Orienteering in Japan」發布了[富士山兒童之國 賽前熱身賽](/joint_events/orienteering_in_japan/event2)的活動資訊。
 
