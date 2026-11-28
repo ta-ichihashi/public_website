@@ -37,6 +37,11 @@ content_blocks:
 {{< accordion id="accordion-flush" class="accordion-flush" >}}
 {{< accordion-item title="LATEST NEWS" show="true" >}}
 
+{{< badge title="Nov. 28 2026" >}}
+
+* Update info [distance from each access point to the race start](travel/transportation#distance-from-each-access-point-to-the-race-start)
+* Posted event at the [Pre event at Mt.Fuji Chldrens World](/joint_events/orienteering_in_japan/event2) on Orienteering in Japan.
+
 {{< badge title="Nov. 27 2026" >}}
 
 * The [ORIENTEERING IN JAPAN](/joint_events/orienteering_in_japan/) webpage introduces orienteering events that are open to WMOC participants.

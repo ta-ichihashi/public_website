@@ -37,6 +37,12 @@ content_blocks:
 {{< accordion id="accordion-flush" class="accordion-flush" >}}
 {{< accordion-item title="LATEST NEWS" show="true" >}}
 
+{{< badge title="2026年11月28日" >}}
+
+* [各交通拠点から競技スタートまでの距離](travel/transportation#distance-from-each-point-to-the-race-start)の情報を更新しました。
+* 「Orienteering in Japan」に[富士山こどもの国 プレ大会](/joint_events/orienteering_in_japan/event2)のイベント情報を掲載しました。
+
+
 {{< badge title="2026-11-26" >}}
 
 * 世界中のWMOC参加者向けに参加可能な国内一般オリエンテーリングイベントの紹介ページ [ORIENTEERING IN JAPAN](/joint_events/orienteering_in_japan/) を開設しました。
