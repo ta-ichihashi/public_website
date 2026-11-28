@@ -8,7 +8,7 @@
       <div class="card h-100 shadow-sm border-0 bg-body-tertiary">
         {{/* サムネイル画像がある場合 */}}
         {{ with .Params.thumbnail }}
-          <img src="{{ . | relURL }}" class="card-img-top" alt="{{ $.Title }}" style="height: 180px; object-fit: cover;">
+          <img src="{{ . | relURL }}" class="card-img-top" alt="{{ $.Page.Title }}" style="height: 180px; object-fit: cover;">
         {{ end }}
 
         <div class="card-body d-flex flex-column">
