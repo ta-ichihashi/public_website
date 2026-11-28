@@ -62,6 +62,7 @@
     {{ range $schedules }}
       {{ $start := time.AsTime .start }}
       {{ $end := time.AsTime .end }}
+      {{ $itemWeb := .website }}
 
       {{ $dateStr := "" }}
       {{ $timeStr := "" }}
@@ -103,8 +104,18 @@
             </span>
           </div>
 
+          {{/* ▼ タイトル（各アイテムの website がある場合はリンク化） */}}
           {{ with .title }}
-            <h5 class="card-title fw-bold mb-1">{{ . }}</h5>
+            <h5 class="card-title fw-bold mb-1">
+              {{ if $itemWeb }}
+                <a href="{{ $itemWeb }}" target="_blank" rel="noopener noreferrer" class="text-decoration-none link-primary d-inline-flex align-items-center">
+                  <span>{{ . }}</span>
+                  {{ partial "assets/icon.html" (dict "icon" "fas arrow-up-right-from-square" "spacing" false "class" "ms-2 small") }}
+                </a>
+              {{ else }}
+                {{ . }}
+              {{ end }}
+            </h5>
           {{ end }}
 
           {{ with .summary }}
