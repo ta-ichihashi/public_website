@@ -37,6 +37,11 @@ content_blocks:
 {{< accordion id="accordion-flush" class="accordion-flush" >}}
 {{< accordion-item title="LATEST NEWS" show="true" >}}
 
+{{< badge title="2026-11-28" >}}
+
+* 更新了[從各交通據點至比賽起點的距離](travel/transportation#distance-from-each-access-point-to-the-race-start)資訊。
+* 於「Orienteering in Japan」發布了[富士山兒童之國 賽前熱身賽](/joint_events/orienteering_in_japan/event2)的活動資訊。
+
 {{< badge title="2026-11-26" >}}
 
 * 我們為來自世界各地的 WMOC 參賽者開設了介紹頁面 [ORIENTEERING IN JAPAN](/joint_events/orienteering_in_japan/)，提供可參加的日本國內一般定向越野賽事資訊。

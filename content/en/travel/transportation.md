@@ -90,3 +90,14 @@ Official Bus Route<br>
     title="Download" 
     id="accommodation_information" 
 >}}
+
+## Distance from each access point to the race start
+
+**Walking time to the starting area (in minutes)**
+
+| Date | Event and Arena | Parking~Arena | Bus stop~Arena | Arena~Start |
+| :--- | :--- | :--- | :--- | :--- |
+| 22,23 May | Sprint: Qualification, Final<br>Shiokaze Park | 30<br>10 (Only for elderly) | 10 | 10 (All classes) |
+| 25 May | Forest: Qualification<br>Higashi Hachibuse Kogen | 10 | 10 | 10 (All classes) |
+| 26 May | Middle Final<br>Uwano Kogen | 10 | 10 | 40 (M35~60, W35~45)<br>15 (Other classes) |
+| 28 May | Long Final<br>Mineyama Kogen | 10 | 10 | 10 (All classes) |
